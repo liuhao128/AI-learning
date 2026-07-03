@@ -1,6 +1,5 @@
 from openai import OpenAI
-from sympy import true
-from torch.cpu import Stream
+
 
 
 class MultiTurnChat:
@@ -50,7 +49,7 @@ if __name__ == "__main__":
     )
 
 
-    while true:
+    while True:
         user_message = input("请输入用户消息：")
         if user_message == "exit" or user_message == "quit":
             break
