@@ -5,7 +5,9 @@ from openai import OpenAI
 client = OpenAI(
     # 若没有配置环境变量，请用百炼API Key将下行替换为：api_key="sk-xxx"
     # api_key=os.getenv("DASHSCOPE_API_KEY"),
-    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    api_key="sk-ws-H.EMRXIDL.0sei.MEUCIQDmN903u_L2HB2boskv5XrOYp_acb74pvNAJWbQP24DwgIgfKbuFOmEnPCAADIWVanzRXYR5wd74St2Wur1yExXTnM",
+    # base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    base_url="https://ws-m71z8s6gl9pvodik.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
 )
 
 # 2.调用模型 5c
@@ -14,7 +16,7 @@ completion = client.chat.completions.create(
     model = "qwen-plus",
     messages = [
         {"role": "system", "content": "You are a helpful assistant."},
-        {"role": "user", "content": "你是谁？"},
+        {"role": "user", "content": "你的模型具体名字是qwen3.7-max吗"},
     ],
     stream=True,
 )
