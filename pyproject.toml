@@ -12,6 +12,7 @@ dependencies = [
     "langchain-chroma>=1.1.0",
     "langchain-classic>=1.0.7",
     "langchain-community>=0.4.2",
+    "langchain-mcp-adapters>=0.3.0",
     "langchain-ollama>=1.1.0",
     "mcp>=1.28.1",
     "ollama>=0.6.2",
